@@ -19,7 +19,16 @@ More details of the protocol can be found in the [paper](https://eprint.iacr.org
     1. By default it will build for Release. `-DCMAKE_BUILD_TYPE=[Release|Debug]` option is also available.
     2. No sudo? Change [`CMAKE_INSTALL_PREFIX`](https://cmake.org/cmake/help/v2.8.8/cmake.html#variable%3aCMAKE_INSTALL_PREFIX).
 
-
+# Usage
+## Install the dependencies
+'''bash
+python3 install.py --deps --tool --ot --agmpc
+'''
+## Run the test
+1. If you want to run the test locally, you need use the following format.
+    '''bash
+    ./run ./bin/test_aes 2 2020
+    '''
 ### Question
 Please send email to wangxiao1254@gmail.com
 
