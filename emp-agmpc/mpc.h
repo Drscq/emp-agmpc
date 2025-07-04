@@ -671,6 +671,10 @@ class CMPC { public:
 		}
 
 		output->associate_cmpc(pool, value, mac, key, eval_labels, labels, io, Delta);
+		// if (party == ALICE) {
+		// 	mask_input[cf->num_wire - cf->n3] = not mask_input[cf->num_wire - cf->n3];
+		// 	std::cout << "Alice output is done!" << std::endl;
+		// }
 		output->output(mask_input, cf->num_wire - cf->n3);
 
 		delete[] mask_input;

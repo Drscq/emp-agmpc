@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8.11)
+cmake_minimum_required(VERSION 4.0)
 project (emp-agmpc)
 set(NAME "emp-agmpc")
 
@@ -13,3 +13,6 @@ install(DIRECTORY emp-agmpc DESTINATION include/)
 
 ENABLE_TESTING()
 ADD_SUBDIRECTORY(test)
+
+message(STATUS "CMAKE_RUNTIME_OUTPUT_DIRECTORY: '${CMAKE_RUNTIME_OUTPUT_DIRECTORY}'")
+message(STATUS "Test executables will be in: ${CMAKE_CURRENT_BINARY_DIR}/test/")
